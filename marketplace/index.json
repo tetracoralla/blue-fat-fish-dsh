@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Blue Fat Fish · OpenAdam Edition",
+    "zh-cn": "蓝色大肥鱼 · OpenAdam 版"
+  },
+  "description": {
+    "en": "The market feed for OpenAdam's unofficial Blue Fat Fish desktop companion.",
+    "zh-cn": "OpenAdam 版非官方蓝色大肥鱼桌宠市场源。"
+  },
+  "metadata": {
+    "categories": {
+      "experience": {
+        "title": {
+          "en": "Experience",
+          "zh-cn": "体验"
+        }
+      }
+    },
+    "labels": {
+      "data-only-bundles": {
+        "title": {
+          "en": "Data-only bundles",
+          "zh-cn": "纯数据伙伴包"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "@openadam/blue-fat-fish",
+      "title": {
+        "en": "Blue Fat Fish · OpenAdam Edition",
+        "zh-cn": "蓝色大肥鱼 · OpenAdam 版"
+      },
+      "description": {
+        "en": "An unofficial Blue Fat Fish visual companion inside DSH, with animated reactions, a responsive character skin, coordinated appearance and theme.",
+        "zh-cn": "在 DSH 内显示的非官方蓝色大肥鱼桌宠：包含动画反应、响应式角色皮肤、完整装扮与主题。"
+      },
+      "author": "OpenAdam",
+      "homepage": "https://www.npmjs.com/~openadam",
+      "metadata": {
+        "category": "experience",
+        "keywords": [
+          "companion",
+          "desktop-pet",
+          "blue-fat-fish",
+          "character-skin",
+          "appearance",
+          "theme"
+        ],
+        "labels": [
+          "data-only-bundles"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.2.30",
+          "publishTimestamp": 1793003160,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}
