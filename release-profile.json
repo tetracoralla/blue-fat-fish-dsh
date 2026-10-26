@@ -1,0 +1,23 @@
+{
+  "schema": "openadam.release-profile",
+  "version": "0.1",
+  "distribution": {
+    "source": "public",
+    "audience": "public"
+  },
+  "carriers": [
+    {
+      "id": "npm-package",
+      "required": true,
+      "manifests": [
+        "package.json",
+        "cordis.patch.yml",
+        "marketplace/listing.json"
+      ],
+      "packages": [
+        "openadam-blue-fat-fish-0.2.30.tgz"
+      ]
+    }
+  ],
+  "intentionalAbsences": []
+}

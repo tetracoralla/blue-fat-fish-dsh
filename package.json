@@ -1,0 +1,62 @@
+{
+  "name": "@openadam/blue-fat-fish",
+  "version": "0.2.30",
+  "description": "Unofficial Blue Fat Fish visual companion inside DSH, OpenAdam edition",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/pet-library.js",
+    "lib/edge-helper.js",
+    "lib/body-renderer.js",
+    "lib/vendor/fflate.mjs",
+    "lib/vendor/fflate.LICENSE",
+    "dist/blue-fat-fish.companion.zip",
+    "docs/BODY-RENDERER-CONTRACT.md",
+    "cordis.patch.yml",
+    "LICENSE",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "third_party/dsh-codex-pet-LICENSE"
+  ],
+  "scripts": {
+    "prepare:market": "node script/prepare_market_package.mjs",
+    "audit:package": "node script/audit_package.mjs",
+    "market:index": "node script/build_market_index.mjs",
+    "test": "node --test",
+    "check": "node --check lib/index.js && node --check lib/pet-library.js && node --check lib/edge-helper.js && node --check lib/body-renderer.js && node --check lib/client.js && node --check script/audit_package.mjs && node --check script/build_market_index.mjs && node --check script/prepare_market_package.mjs && node --check script/public_payload.mjs && node --check script/export_public_source.mjs && npm test",
+    "candidate": "npm run check && npm run prepare:market && npm run audit:package",
+    "source:export": "node script/export_public_source.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.1-rc.2 <0.3.0",
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible"
+      }
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "author": "OpenAdam",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": {
+    "en": "Blue Fat Fish · OpenAdam Edition",
+    "zh-cn": "蓝色大肥鱼 · OpenAdam 版"
+  },
+  "description": {
+    "en": "An unofficial Blue Fat Fish visual companion inside DSH, with animated reactions, a responsive character skin, coordinated appearance and theme.",
+    "zh-cn": "在 DSH 内显示的非官方蓝色大肥鱼桌宠：包含动画反应、响应式角色皮肤、完整装扮与主题。"
+  },
+  "author": "OpenAdam",
+  "homepage": "https://www.npmjs.com/~openadam",
+  "category": "experience",
+  "keywords": [
+    "companion",
+    "desktop-pet",
+    "blue-fat-fish",
+    "character-skin",
+    "appearance",
+    "theme"
+  ],
+  "labels": [
+    "data-only-bundles"
+  ]
+}

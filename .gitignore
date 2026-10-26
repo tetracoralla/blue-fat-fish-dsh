@@ -1,0 +1,8 @@
+node_modules/
+*.tgz
+.DS_Store
+.local/
+dist/*
+!dist/blue-fat-fish.companion.zip
+native/macos/.build/
+native/macos/.swiftpm/

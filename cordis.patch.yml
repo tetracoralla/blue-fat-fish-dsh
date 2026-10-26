@@ -1,0 +1,9 @@
+- insert:
+    - id: openadam-blue-fat-fish
+      name: '@openadam/blue-fat-fish'
+      config:
+        companionsRoot: !!js dshHomePath('openadam-companions')
+        maxUploadBytes: 96000000
+        initialBundlePath: !!js process.env.OPENADAM_COMPANION_BUNDLE
+        edgeHelperExecutable: !!js process.env.OPENADAM_DSH_EDGE_HELPER
+        bodyRendererExecutable: !!js process.env.OPENADAM_BODY_RENDERER
